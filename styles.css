@@ -1,0 +1,81 @@
+* {
+    margin: 20;
+    padding: 20;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial Black';
+    background-color: #f5d7d7ce;
+    color: #0e110e;
+    line-height: 5;
+
+}
+
+
+.main-header {
+    background-color: #e7e5dd10;
+    border: 15px solid #790b35;
+    padding: 50px;
+}
+
+.header-content {
+    text-align: center;
+}
+
+.site-title {
+    color: #01012c;
+    font-size: 70px;
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+
+.onmouseenter{
+    background-color:rgb(75, 190, 228);
+}
+
+.onmouseleave{
+    background-color: transparent;
+    padding: 20px; border: 4px solid #000;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode header {
+    background-color: #1e1e1e;
+}
+
+.dark-mode section {
+    background-color: #1e1e1e;
+}
+
+/* Button styles */
+.show-details-btn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #6d757e;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.show-details-btn:hover {
+    background-color: #0056b3;
+}
+
+#dark-mode-toggle {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#dark-mode-toggle:hover {
+    background-color: #555;
+}
