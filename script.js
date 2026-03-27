@@ -33,17 +33,32 @@ document.addEventListener('DOMContentLoaded', function() {
 function validateContactForm() {
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
+    const emailError = document.getElementById('email-error');
+    const messageError = document.getElementById('message-error');
 
-    if (!email.includes('@')) {
-        alert('Please enter a valid email address.');
-        return false;
+    let isValid = true;
+
+    // Clear previous errors
+    emailError.textContent = '';
+    messageError.textContent = '';
+
+  
+    if (!emailRegex.test(email)) {
+        emailError.textContent = 'Please enter a valid email address.';
+        isValid = false;
     }
+
+    // Message validation
     if (message.trim() === '') {
-        alert('Please enter a message.');
-        return false;
+        messageError.textContent = 'Please enter a message.';
+        isValid = false;
     }
-    alert('Thank you for your message!');
-    return true;
+
+    if (isValid) {
+        alert('Thank you for your message!');
+    }
+
+    return isValid;
 }
 
 document.addEventListener('DOMContentLoaded', function() {

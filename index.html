@@ -55,9 +55,11 @@
         <form id="contact-form">
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
+            <div id="email-error" class="error-message"></div>
             <br>
             <label for="message">Message:</label>
             <textarea id="message" name="message" required></textarea>
+            <div id="message-error" class="error-message"></div>
             <br>
             <button type="submit">Send Message</button>
         </form>

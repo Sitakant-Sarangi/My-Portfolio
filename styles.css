@@ -7,6 +7,10 @@
 body {
     font-family: 'Arial Black';
     background-color: #f5d7d7ce;
+    background-image: url('Images/ImageCreator_20260312062521.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #0e110e;
     line-height: 5;
 
@@ -14,7 +18,7 @@ body {
 
 
 .main-header {
-    background-color: #e7e5dd10;
+    background-color: #f7f2f0;
     border: 15px solid #790b35;
     padding: 50px;
 }
@@ -24,7 +28,7 @@ body {
 }
 
 .site-title {
-    color: #01012c;
+    color: #8e8eeb;
     font-size: 70px;
     text-decoration: underline;
     font-weight: normal;
@@ -43,7 +47,7 @@ body {
 /* Dark mode styles */
 .dark-mode {
     background-color: #121212;
-    color: #ffffff;
+    color: #5c5858;
 }
 
 .dark-mode header {
@@ -65,7 +69,7 @@ body {
 }
 
 .show-details-btn:hover {
-    background-color: #0056b3;
+    background-color: #f2f3f5;
 }
 
 #dark-mode-toggle {
@@ -84,8 +88,8 @@ body {
 }
 
 .project-card {
-    background-color: #fff;
-    border: 2px solid #790b35;
+    background-color: #a5a0a0;
+    border: 2px solid #4b041f;
     border-radius: 12px;
     padding: 1rem;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -114,4 +118,11 @@ body {
 
 #dark-mode-toggle:hover {
     background-color: #555;
+}
+
+/* Form validation styles */
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
 }
