@@ -27,20 +27,26 @@
 
     <section id="projects">
         <h2>Projects</h2>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="javascript">JavaScript</button>
+            <button class="filter-btn" data-category="html-css">HTML/CSS</button>
+            <button class="filter-btn" data-category="react">React</button>
+        </div>
         <div class="project-gallery">
-            <article class="project-card">
+            <article class="project-card" data-category="javascript html-css">
                 <h3>Project 1: Working with HTML, CSS, and JavaScript</h3>
                 <p>Web application for creating, editing, and deleting tasks.</p>
                 <div class="project-details" style="display: none;">Built with HTML, CSS, and JavaScript. Features task creation, editing, and deletion.</div>
                 <button class="show-details-btn">Show Details</button>
             </article>
-            <article class="project-card">
+            <article class="project-card" data-category="javascript html-css">
                 <h3>Project 2: Portfolio Website</h3>
                 <p>Interactive personal website for showcasing skills and projects.</p>
                 <div class="project-details" style="display: none;">Used basic HTML, CSS, and JavaScript.</div>
                 <button class="show-details-btn">Show Details</button>
             </article>
-            <article class="project-card">
+            <article class="project-card" data-category="javascript html-css">
                 <h3>Project 3: FIFA 2026 Canada</h3>
                 <p>Group project website for FIFA 2026 event information.</p>
                 <div class="project-details" style="display: none;">Group project created with HTML, CSS, and JavaScript.</div>
