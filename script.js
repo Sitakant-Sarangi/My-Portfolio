@@ -12,7 +12,6 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
-
 document.addEventListener('DOMContentLoaded', function() {
     const projectCards = document.querySelectorAll('#projects .project-card');
     projectCards.forEach((card) => {
@@ -29,7 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
 function validateContactForm() {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const email = document.getElementById('email').value;
@@ -39,17 +37,14 @@ function validateContactForm() {
 
     let isValid = true;
 
-    
     emailError.textContent = '';
     messageError.textContent = '';
 
- 
     if (!emailRegex.test(email)) {
         emailError.textContent = 'Please enter a valid email address.';
         isValid = false;
     }
 
-   
     if (message.trim() === '') {
         messageError.textContent = 'Please enter a message.';
         isValid = false;
@@ -68,7 +63,6 @@ document.addEventListener('DOMContentLoaded', function() {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             if (validateContactForm()) {
-            
                 contactForm.reset();
             }
         });
@@ -89,7 +83,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Project filtering functionality
 document.addEventListener('DOMContentLoaded', function() {
     const filterButtons = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');
@@ -97,7 +90,6 @@ document.addEventListener('DOMContentLoaded', function() {
     filterButtons.forEach(button => {
         button.addEventListener('click', function() {
             const category = this.getAttribute('data-category');
-
             // Remove active class from all buttons
             filterButtons.forEach(btn => btn.classList.remove('active'));
             // Add active class to clicked button
@@ -116,7 +108,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Section visibility animation
 document.addEventListener('DOMContentLoaded', function() {
     const sections = document.querySelectorAll('section');
 

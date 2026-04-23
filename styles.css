@@ -13,9 +13,7 @@ body {
     background-repeat: no-repeat;
     color: #0e110e;
     line-height: 5;
-
 }
-
 
 .main-header {
     background-color: #f7f2f0;
@@ -34,14 +32,14 @@ body {
     font-weight: normal;
 }
 
-
-.onmouseenter{
-    background-color:rgb(75, 190, 228);
+.onmouseenter {
+    background-color: rgb(75, 190, 228);
 }
 
-.onmouseleave{
+.onmouseleave {
     background-color: transparent;
-    padding: 20px; border: 4px solid #000;
+    padding: 20px;
+    border: 4px solid #000;
 }
 
 /* Dark mode styles */
@@ -134,6 +132,11 @@ body {
     box-shadow: 0 5px 15px rgba(248, 194, 194, 0.1);
     transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     animation: cardFadeIn 0.6s ease-out forwards;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
 }
 
 .project-card h3 {
@@ -244,7 +247,7 @@ body {
 /* Animations */
 .project-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
 }
 
 nav a {
@@ -288,4 +291,27 @@ section.visible {
 
 header {
     animation: slideInUp 0.8s ease-out;
+}
+
+/* Skills section */
+#skills ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+#skills li {
+    background-color: #7bb5f0;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#skills li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
