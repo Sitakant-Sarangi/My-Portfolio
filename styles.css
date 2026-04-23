@@ -293,25 +293,65 @@ header {
     animation: slideInUp 0.8s ease-out;
 }
 
-/* Skills section */
+/* Skills section - styled as a single book */
+#skills {
+    background: linear-gradient(135deg, #9ec8f1, #34495e);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    margin: 2rem 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    perspective: 1000px;
+}
+
+#skills h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ecf0f1;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
 #skills ul {
     list-style: none;
-    padding: 0;
+    padding: 1.5rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    background: linear-gradient(to right, #ecf0f1 50%, #bdc3c7 50%);
+    border-radius: 8px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+#skills ul::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: #34495e;
+    transform: translateX(-1.5px);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 #skills li {
-    background-color: #7bb5f0;
+    background: linear-gradient(135deg, #3498db, #2980b9);
     padding: 1rem;
-    border-radius: 8px;
+    border-radius: 6px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    color: #ffffff;
+    font-weight: bold;
+    border: 2px solid #2c3e50;
 }
 
 #skills li:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.08);
+    box-shadow: 0 6px 15px rgba(52, 152, 219, 0.4);
+    background: linear-gradient(135deg, #2980b9, #1f618d);
 }
